@@ -1,6 +1,3 @@
-// FUNCTIONS
-// function to get password character length
-
 var userResponse = {};
 var password = "";
 
@@ -79,60 +76,15 @@ function passGen() {
     // Substring which matches random characters to user inputed character length
     password = password.substring(0, passLength);
 
-
+    // Displaying completed password to textarea in HTML
     var passEl = document.querySelector("#password");
-
     passEl.value = password
 }
 
-
-
-// ALERTS
 // Welcoming alert to user 
 window.alert("Welcome to Password Generator - Click on the Generate Password button to get started!");
 
-// Prompt for password length-------------------------------------------------------------------------------------------------------------------------------------------
-// var passLength = window.prompt("Please enter how many characters you would like your password to be. (Password MUST be 8-128 characters long!)");
-//     if (passLength > 8 && passLength < 129) {
 
-//         console.log(passLength);
-//         console.log("Amount of characters in the password " + passLength);
-//     }
-//     else if (passLength > 129 && passLength < 8) {
-//         window.prompt("Please enter a valid character length");
-//     }
-
-// Prompt for lowercase letters--------------
-// var passLower = window.confirm("Would you like your password to contain lowercase letters?");
-//     if (confirm()) {
-//         getRandomLower();
-//         console.log("Random lowercase letter " + getRandomLower());
-//     }
-//     else if (false);
-
-// Prompt for uppercase letters----------
-// var passUpper = window.confirm("Would you like your password to contain uppercase letters?");
-//     if (confirm()) {
-//         getRandomUpper();
-//         console.log("Random uppercase letter " + getRandomUpper());
-//     }
-//     else if (false);
-
-// Prompt for numbers-----------
-// var passNum = window.confirm("Would you like your password to contain numbers?");
-//     if (confirm()) {
-//         getRandomNumber();
-//         console.log("Random number " + getRandomNumber());
-//     }
-//     else if (false);  
-
-// Prompt for special characters-----------
-// var passSym = window.confirm("Would you like your password to contain special characters?");
-//     if (confirm()) {
-//         getRandomSymbol();
-//         console.log("Random special character " + getRandomSymbol());
-//     }
-//     else if (false); 
 
 
 
